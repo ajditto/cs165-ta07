@@ -33,10 +33,9 @@ int main()
    // Core Requirement 2
    for (int i = 0; i < arraySize; i++)
    {
-      float value = getValueFromPointer(propsArray);
+      float value = getValueFromPointer(&propsArray[i]);
       cout << "The value of the element " << i << " is: ";
       cout << value << endl;
-      cin.ignore();
    }
 
    
