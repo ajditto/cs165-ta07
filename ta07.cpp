@@ -2,7 +2,11 @@
 using namespace std;
 
 // Core requirements
-float getValueFromPointer(float* thePointer);
+float getValueFromPointer(float* thePointer)
+{
+   return *thePointer;
+}
+
 float* getMinValue(float* a, float* b);
 
 // Stretch goals
