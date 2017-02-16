@@ -14,12 +14,8 @@ void swapElements(float* theArray[], int a, int b);
 void sortArray(float* theArray[]);
 
 int main()
-{  
-<<<<<<< HEAD
-    // Core Requirement 1
-=======
+{ 
    // Core Requirement 1
->>>>>>> e75b6e07901a5466b0117c9bf924513566199dcf
    int arraySize;
    cout << "Enter the array size: ";
    cin >> arraySize;
