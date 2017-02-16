@@ -11,7 +11,7 @@ void sortArray(float* theArray[]);
 
 int main()
 {  
-   /* // Core Requirement 1
+   // Core Requirement 1
    int arraySize;
    cout << "Enter the array size: ";
    cin >> arraySize;
@@ -23,7 +23,7 @@ int main()
    {
           cout << "Enter a float value: ";
           cin >> ????
-   }*/
+   }
 
    /* // Core Requirement 2
    for (int i = 0; i < arraySize; i++)
