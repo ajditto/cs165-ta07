@@ -21,7 +21,7 @@ int main()
    cin >> arraySize;
 
    // Allocate your array(s) here
-   int * propsArray[] = new int[arraySize];
+   float* propsArray = new float[arraySize];
 
    // Fill your array with float values
    for(int i = 0; i < arraySize; i++) 
@@ -33,10 +33,12 @@ int main()
    // Core Requirement 2
    for (int i = 0; i < arraySize; i++)
    {
-      float value = getValueFromPointer(propsArray[i]);
+      float value = getValueFromPointer(propsArray);
       cout << "The value of the element " << i << " is: ";
       cout << value << endl;
+      cin.ignore();
    }
+
    
 
    /* // Core Requirement 3
