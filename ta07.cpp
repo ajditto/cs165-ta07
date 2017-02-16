@@ -7,7 +7,13 @@ float getValueFromPointer(float* thePointer)
    return *thePointer;
 }
 
-float* getMinValue(float* a, float* b);
+float* getMinValue(float* a, float* b)
+{
+   if (a < b)
+      return a;
+   else
+      return b;
+}
 
 // Stretch goals
 void swapElements(float* theArray[], int a, int b);
@@ -37,14 +43,11 @@ int main()
       cout << "The value of the element " << i << " is: ";
       cout << value << endl;
    }
-
    
-
-   /* // Core Requirement 3
+   // Core Requirement 3
    // Print the smaller of the first and last elements of the array
-   float *pointerToMin = getMinValue(????, ????);
-   cout << ?????
-   */
+   float *pointerToMin = getMinValue(&propsArray[0], &propsArray[arraySize - 1]);
+   cout << *pointerToMin;
 
    // Clean up your array(s) here
    delete [] propsArray;
