@@ -21,13 +21,13 @@ int main()
    cin >> arraySize;
 
    // Allocate your array(s) here
-   int * propsArray[] = new int[]
+   int * propsArray[] = new int[arraySize];
 
    // Fill your array with float values
    for(int i = 0; i < arraySize; i++) 
    {
           cout << "Enter a float value: ";
-          cin >> ????
+          cin >> propsArray[i];
    }
 
    /* // Core Requirement 2
