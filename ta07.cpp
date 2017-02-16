@@ -14,7 +14,7 @@ void swapElements(float* theArray[], int a, int b);
 void sortArray(float* theArray[]);
 
 int main()
-{ 
+{
    // Core Requirement 1
    int arraySize;
    cout << "Enter the array size: ";
@@ -30,14 +30,14 @@ int main()
           cin >> propsArray[i];
    }
 
-   /* // Core Requirement 2
+   // Core Requirement 2
    for (int i = 0; i < arraySize; i++)
    {
-      float value = getValueFromPointer(????);
+      float value = getValueFromPointer(propsArray[i]);
       cout << "The value of the element " << i << " is: ";
       cout << value << endl;
    }
-   */
+   
 
    /* // Core Requirement 3
    // Print the smaller of the first and last elements of the array
@@ -46,6 +46,9 @@ int main()
    */
 
    // Clean up your array(s) here
+   delete [] propsArray;
 
    return 0;
 }
+
+
